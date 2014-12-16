@@ -1105,13 +1105,189 @@ MathJax.Hub.Config({
   showProcessingMessages: false
 });
 </script>
-<title>markdown</title></head><body><article class="markdown-body"><h1 id="markdown"><a name="user-content-markdown" href="#markdown" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>markdown教程</h1>
-<p>1.为了更好的用github记录自己的学习，学md是第一步<br />
-2.sublime里装一个markdown edit 和markdown preview<br />
-3.fis也能自动编译md，但是还得写fis-conf，太麻烦，决定用markdown preview，写完md之后，Ctrl+B，自动生成可阅读的html文件，然后用 fis release -cwL,就实现了左边写md，Ctrl+B保存，右边的浏览器自动刷新看效果了，萌萌哒</p>
-<table>
-    <tr>
-        <td>21312</td>
-        <td>asd</td>
-    </tr>
-</table></article></body></html>
+<title>markdown</title></head><body><article class="markdown-body"><h1 id="markdown"><a name="user-content-markdown" href="#markdown" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>markdown学习记录</h1>
+<blockquote>
+<p>为了更好的用github记录自己的学习，学md是第一步<br />
+sublime里装一个markdown edit 和markdown preview<br />
+fis也能自动编译md，但是还得写fis-conf，太麻烦，决定用markdown preview，写完md之后，Ctrl+B，自动生成可阅读的html文件，然后用 fis release -cwL,就实现了左边写md，Ctrl+B保存，右边的浏览器自动刷新看效果了，萌萌哒</p>
+<p>代码和效果对应</p>
+</blockquote>
+<div class="codehilite"><pre><span class="c">#这是一个标题1</span>
+</pre></div>
+
+
+<h1 id="1"><a name="user-content-1" href="#1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>这是一个标题1</h1>
+<div class="codehilite"><pre><span class="c">##这是一个标题2</span>
+</pre></div>
+
+
+<h2 id="2"><a name="user-content-2" href="#2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>这是一个标题2</h2>
+<div class="codehilite"><pre><span class="c">###这是一个标题3</span>
+</pre></div>
+
+
+<h3 id="3"><a name="user-content-3" href="#3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>这是一个标题3</h3>
+<div class="codehilite"><pre><span class="c">####这是一个标题4</span>
+</pre></div>
+
+
+<h4 id="4"><a name="user-content-4" href="#4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>这是一个标题4</h4>
+<div class="codehilite"><pre><span class="c">#####这是一个标题5</span>
+</pre></div>
+
+
+<h5 id="5"><a name="user-content-5" href="#5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>这是一个标题5</h5>
+<div class="codehilite"><pre><span class="c">######这是一个标题6</span>
+</pre></div>
+
+
+<h6 id="6"><a name="user-content-6" href="#6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>这是一个标题6</h6>
+<p><div class="codehilite"><pre><span class="o">**</span><span class="err">这是一个粗体</span><span class="o">**</span>
+<span class="vg">__</span><span class="err">这也是一个粗体</span><span class="vg">__</span>
+</pre></div>
+<br />
+<strong>这是一个粗体</strong><br />
+<strong>这也是一个粗体</strong></p>
+<p><div class="codehilite"><pre><span class="o">*</span><span class="err">这是一个斜体</span><span class="o">*</span>
+<span class="vg">_</span><span class="err">这也是一个斜体</span><span class="vg">_</span>
+</pre></div>
+<br />
+<em>这是一个斜体</em><br />
+<em>这也是一个斜体</em></p>
+<div class="codehilite"><pre><span class="o">&gt;</span><span class="err">这是一个引用</span>
+</pre></div>
+
+
+<blockquote>
+<p>这是一个引用</p>
+</blockquote>
+<p><div class="codehilite"><pre><span class="o">*</span><span class="w"> </span><span class="err">列表</span>
+<span class="o">*</span><span class="w"> </span><span class="err">列表</span>
+<span class="o">*</span><span class="w"> </span><span class="err">列表</span>
+
+<span class="o">+</span><span class="w"> </span><span class="err">列表</span>
+<span class="o">+</span><span class="w"> </span><span class="err">列表</span>
+<span class="o">+</span><span class="w"> </span><span class="err">列表</span>
+
+<span class="o">-</span><span class="w"> </span><span class="err">列表</span>
+<span class="o">-</span><span class="w"> </span><span class="err">列表</span>
+<span class="o">-</span><span class="w"> </span><span class="err">列表</span>
+</pre></div>
+<br />
+<em> 列表<br />
+</em> 列表<br />
+* 列表</p>
+<ul>
+<li>列表</li>
+<li>列表</li>
+<li>
+<p>列表</p>
+</li>
+<li>
+<p>列表</p>
+</li>
+<li>列表</li>
+<li>列表</li>
+</ul>
+<p><div class="codehilite"><pre><span class="nl">1</span><span class="o">.</span><span class="err">编号列表</span>
+<span class="nl">2</span><span class="o">.</span><span class="err">编号列表</span>
+<span class="nl">3</span><span class="o">.</span><span class="err">编号列表</span>
+</pre></div>
+<br />
+1.编号列表<br />
+2.编号列表<br />
+3.编号列表</p>
+<p><div class="codehilite"><pre><span class="err">超链接</span><span class="w"> </span><span class="p">[</span><span class="err">百度</span><span class="p">](</span><span class="nl">http:</span><span class="o">//</span><span class="vg">baidu</span><span class="o">.</span><span class="vg">com</span><span class="p">)</span>
+</pre></div>
+<br />
+超链接 <a href="http://baidu.com">百度</a></p>
+<p><div class="codehilite"><pre><span class="err">相对连接</span><span class="w"> </span><span class="p">[</span><span class="vg">markdown</span><span class="o">.</span><span class="vg">html</span><span class="p">](</span><span class="o">/</span><span class="vg">markdown</span><span class="o">.</span><span class="vg">html</span><span class="p">)</span>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+<br />
+<div class="codehilite"><pre>
+</pre></div>
+</p></article></body></html>
