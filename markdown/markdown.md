@@ -106,8 +106,20 @@ _这也是一个斜体_
 ```
 相对连接 [markdown.html](/markdown.html)
 ```
+相对连接 [markdown.html](/markdown.html)
+
+
 ```
+[google]: htt://google.com "goo"
+[baidu]: htt://baidu.com "ba"
+
+from [baidu] to [google]
 ```
+[google]: htt://google.com "goo"
+[baidu]: htt://baidu.com "ba"
+
+from [baidu] to [google]
+
 ```
 ```
 ```
