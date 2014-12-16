@@ -1235,22 +1235,52 @@ fis也能自动编译md，但是还得写fis-conf，太麻烦，决定用markdow
 
 
 <p>行内代码<code>alert(2)</code></p>
-<pre>
-wzxhzdk:17
-</pre>
-
-<div class="codehilite"><pre><span class="w">    </span><span class="err">单独代码，用三个反引号，可以加上语言</span>
+<p>```python<br />
+    #单独代码，用三个反引号，可以加上语言<br />
+    from xxx import ddd<br />
+    print &lsquo;hello&rsquo;</p>
+<p>```</p>
+<div class="codehilite"><pre>    \<span class="c">#单独代码，用三个反引号，可以加上语言</span>
+    <span class="kn">from</span> <span class="nn">xxx</span> <span class="kn">import</span> <span class="n">ddd</span>
+    <span class="k">print</span> <span class="s">&#39;hello&#39;</span>
 </pre></div>
 
 
-<p><div class="codehilite"><pre><span class="err">分割线，</span><span class="o">***</span>
+<p><div class="codehilite"><pre><span class="err">分割线</span>
+<span class="o">***</span>
 </pre></div>
 <br />
-分割线，***</p>
+分割线</p>
+<hr />
+<p><div class="codehilite"><pre><span class="vg">markdown</span><span class="w"> </span><span class="err">支持输入一些特殊字符</span>
+<span class="o">\\</span>
+<span class="o">\</span><span class="err">`</span>
+<span class="o">\*</span>
+<span class="o">\</span><span class="vg">_</span>
+<span class="o">\</span><span class="p">{}</span>
+<span class="o">\</span><span class="p">[]</span>
+<span class="o">\</span><span class="p">()</span>
+<span class="o">\</span><span class="err">#</span>
+<span class="o">\+</span>
+<span class="o">\-</span>
+<span class="o">\.</span>
+<span class="o">\!</span>
+</pre></div>
+<br />
+markdown 支持输入一些特殊字符<br />
+\<br />
+`<br />
+*<br />
+_<br />
+{}<br />
+[]<br />
+()<br />
+#<br />
++<br />
+-<br />
+.<br />
+!</p>
 <p><div class="codehilite"><pre>
-</pre></div>
-<br />
-<div class="codehilite"><pre>
 </pre></div>
 <br />
 <div class="codehilite"><pre>
