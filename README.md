@@ -1,5 +1,5 @@
 #my FE blog
-我是一只小FE，编辑器用sublime，编辑工具用fis，希望能通过写教程的方式，记录自己前端的学习
+我是一只小FE，编辑器用sublime，编译工具用[fis](https://github.com/fex-team/fis)，用过[angular](https://github.com/angular/angular.js)和[jquery](https://github.com/jquery/jquery)希望能通过写教程的方式，记录自己前端的学习
 
 简单的列举现在能想到的一些任务,逐步完成,想到什么,就加上
 > 学习的程度
