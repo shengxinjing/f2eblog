@@ -110,8 +110,8 @@ _这也是一个斜体_
 
 
 ```
-[google]: htt://google.com "goo"
-[baidu]: htt://baidu.com "ba"
+[google]: http://google.com "goo"
+[baidu]: http://baidu.com "ba"
 
 from [baidu] to [google]
 ```
