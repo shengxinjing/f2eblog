@@ -154,18 +154,23 @@ from [baidu]
 行内代码`alert(2)`
 
 
-\`\`\`python
-    \#单独代码，用三个反引号，可以加上语言
-    from xxx import ddd
-    print 'hello'
+\`\`\`js
+    \#单独代码，用三个反引号，可以加上语言(github上md特有功能    function test(){
+        console.log('hello')
+    }
+)
+    function test(){
+        console.log('hello')
+    }
 
 \`\`\`
 
 
 ```python
     \#单独代码，用三个反引号，可以加上语言
-    from xxx import ddd
-    print 'hello'
+    function test(){
+        console.log('hello')
+    }
 ```
 
 
@@ -210,10 +215,17 @@ markdown 支持输入一些特殊字符
 
 
 
+>GFM额外的功能
+>代码支持语言
+
 ```
+支持直接链接
+http://www.baidu.com
 ```
-```
-```
+支持直接链接
+http://www.baidu.com
+
+
 ```
 ```
 ```

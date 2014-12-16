@@ -1235,14 +1235,19 @@ fis也能自动编译md，但是还得写fis-conf，太麻烦，决定用markdow
 
 
 <p>行内代码<code>alert(2)</code></p>
-<p>```python<br />
-    #单独代码，用三个反引号，可以加上语言<br />
-    from xxx import ddd<br />
-    print &lsquo;hello&rsquo;</p>
+<p>```js<br />
+    #单独代码，用三个反引号，可以加上语言(github上md特有功能    function test(){<br />
+        console.log(&lsquo;hello&rsquo;)<br />
+    }<br />
+)<br />
+    function test(){<br />
+        console.log(&lsquo;hello&rsquo;)<br />
+    }</p>
 <p>```</p>
 <div class="codehilite"><pre>    \<span class="c">#单独代码，用三个反引号，可以加上语言</span>
-    <span class="kn">from</span> <span class="nn">xxx</span> <span class="kn">import</span> <span class="n">ddd</span>
-    <span class="k">print</span> <span class="s">&#39;hello&#39;</span>
+    <span class="n">function</span> <span class="n">test</span><span class="p">(){</span>
+        <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s">&#39;hello&#39;</span><span class="p">)</span>
+    <span class="p">}</span>
 </pre></div>
 
 
@@ -1280,13 +1285,17 @@ _<br />
 -<br />
 .<br />
 !</p>
+<blockquote>
+<p>GFM额外的功能<br />
+代码支持语言</p>
+</blockquote>
+<p><div class="codehilite"><pre><span class="err">支持直接链接</span>
+<span class="nl">http:</span><span class="o">//</span><span class="vg">www</span><span class="o">.</span><span class="vg">baidu</span><span class="o">.</span><span class="vg">com</span>
+</pre></div>
+<br />
+支持直接链接<br />
+<a href="http://www.baidu.com">http://www.baidu.com</a></p>
 <p><div class="codehilite"><pre>
-</pre></div>
-<br />
-<div class="codehilite"><pre>
-</pre></div>
-<br />
-<div class="codehilite"><pre>
 </pre></div>
 <br />
 <div class="codehilite"><pre>
