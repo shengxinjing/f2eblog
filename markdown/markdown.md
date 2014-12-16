@@ -114,6 +114,18 @@ _这也是一个斜体_
 ```
 普通连接 <http://www.baidu.com>
 
+```
+定义链接
+[baidu]: http://www.baidu.com
+
+from [baidu]
+```
+定义链接
+[baidu]: http://www.baidu.com
+
+from [baidu]
+
+
 
 ```
 图片
@@ -131,13 +143,24 @@ _这也是一个斜体_
 [dog1]: https://avatars0.githubusercontent.com/u/1905176
 ![dog][dog1]
 
-[baidu]: http://www.baidu.com
 
-from [baidu]
 
 ```
+行内代码`alert(2)`
+
 ```
+
+
+行内代码`alert(2)`
+
+<pre>
+    ```
+        单独代码，用三个反引号，可以叫上语言
+    ```
+</pre>
+
 ```
+
 ```
 ```
 ```
