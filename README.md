@@ -9,6 +9,7 @@
 
 - [x] [markdown](/markdown/markdown.md) 写文档  @2014-12-16
 - [x] [angular](https://github.com/shengxinjing/angular_blog) 单独开了一个项目
+- [ ] 团队的面试题
 - [ ] nodeppt 学会之后，以后就用这个写ppt了
 - [ ] promoise 组内串讲@1.15
 - [ ] sass

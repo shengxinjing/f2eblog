@@ -136,19 +136,20 @@ from [baidu]
 
 ```
 图片
-![github](https://avatars0.githubusercontent.com/u/1905176)
+![阿森纳](https://avatars0.githubusercontent.com/u/1905176?v=3&s=460)
 
 定义图片
-[dog]: https://avatars0.githubusercontent.com/u/1905176
-
+[arsenal]: https://avatars0.githubusercontent.com/u/1905176
+![aaa][arsenal]
 [baidu]: http://www.baidu.com
 ```
 图片
-![github](https://avatars0.githubusercontent.com/u/1905176)
+![阿森纳](https://avatars0.githubusercontent.com/u/1905176?v=3&s=460)
 
+[arsenal]: https://avatars0.githubusercontent.com/u/1905176
 定义图片
-[dog1]: https://avatars0.githubusercontent.com/u/1905176
-![dog][dog1]
+![aaa][arsenal]
+[baidu]: http://www.baidu.com
 
 
 
