@@ -110,18 +110,31 @@ _这也是一个斜体_
 
 
 ```
-[google]: http://google.com "goo"
-[baidu]: http://baidu.com "ba"
-
-from [baidu] to [google]
+普通连接 <http://www.baidu.com>
 ```
-[google]: htt://google.com "goo"
-[baidu]: htt://baidu.com "ba"
+普通连接 <http://www.baidu.com>
 
-from [baidu] to [google]
 
 ```
+图片
+![github](https://avatars0.githubusercontent.com/u/1905176)
+
+定义图片
+[dog]: https://avatars0.githubusercontent.com/u/1905176
+
+[baidu]: http://www.baidu.com
 ```
+图片
+![github](https://avatars0.githubusercontent.com/u/1905176)
+
+定义图片
+[dog1]: https://avatars0.githubusercontent.com/u/1905176
+![dog][dog1]
+
+[baidu]: http://www.baidu.com
+
+from [baidu]
+
 ```
 ```
 ```
