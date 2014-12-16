@@ -20,6 +20,7 @@
 - [ ] This is an incomplete item
 - [ ] This is an incomplete item
 还有emoji! :sparkles: :camel: :boom:
+更多emoji表情 [emoji](http://www.emoji-cheat-sheet.com/)
 
 
 ```
