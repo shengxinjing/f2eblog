@@ -226,3 +226,4 @@ http://www.baidu.com
 
 
 >bingo虽然很挫，但是也会md了，文档写起来
+>jquery的README.md写的就非常好，可以看看[jquery](https://github.com/jquery/jquery)
