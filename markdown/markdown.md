@@ -111,9 +111,11 @@
 超链接 [百度](http://baidu.com)
 
 ```
-相对连接 [markdown.html](/markdown.html)
+相对连接 [markdown.html](/markdown/markdown.html)
+[mark2](markdown.html)
 ```
 相对连接 [markdown.html](/markdown.html)
+[mark2](markdown.html)
 
 
 ```
