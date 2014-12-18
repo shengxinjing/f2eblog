@@ -15,5 +15,44 @@
     npm install -g fis-parser-jade
     ```
 2. 然后再项目的fis-conf.js里加入下面两行
+ ```js
+ //使用fis-parser-jade插件编译jade文件
+ fis.config.set('modules.parser.jade', 'jade');
+ //jade文件经过编译后输出为html文件
+ fis.config.set('roadmap.ext.jade', 'html');
+ ```
+3. 然后就很high了，直接上代码
+4.源码
+    - js文件
+     ```js
+    app.directive('demo', function () {
+        return {
+            template: __inline('demo.jade'),
+            scope: {},
+            link: function postLink(scope, iElement, iAttrs) {
 
+            }
+        };
+    })
+     ```
+
+    - jade模板
+
+     ```
+        .demo
+            input(type='text')
+        p.alert
+     ```
+5 编译后
+ ```
+    app.directive('demo', function () {
+        return {
+            template: "<div class=\"demo\"><input type=\"text\"/></div><p class=\"alert\"></p>",
+            scope: {},
+            link: function postLink(scope, iElement, iAttrs) {
+
+            }
+        }
+    })
+ ```
      
