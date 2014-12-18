@@ -1120,10 +1120,54 @@ MathJax.Hub.Config({
 <li>
 <p>主要记录一下和fis的集成，fis提供了配合jade的</p>
 </li>
+<li>项目里主要用到了jade编译为html的功能，数据加载模板的功能没用到，使用了jade比较简单的功能</li>
 </ul>
 <ol>
-<li>本地安装fis-parser-jade<br />
-     <div class="codehilite"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">-</span><span class="vg">g</span><span class="w"> </span><span class="vg">fis</span><span class="o">-</span><span class="vg">parser</span><span class="o">-</span><span class="vg">jade</span>
+<li>本地安装fis-parser-jade</li>
+</ol>
+<p><div class="codehilite"><pre><span class="vg">npm</span><span class="w"> </span><span class="vg">install</span><span class="w"> </span><span class="o">-</span><span class="vg">g</span><span class="w"> </span><span class="vg">fis</span><span class="o">-</span><span class="vg">parser</span><span class="o">-</span><span class="vg">jade</span>
 </pre></div>
-</li>
+<br />
+2. 然后再项目的fis-conf.js里加入下面两行</p>
+<p><div class="codehilite"><pre>    <span class="c1">//使用fis-parser-jade插件编译jade文件</span>
+    <span class="nx">fis</span><span class="p">.</span><span class="nx">config</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;modules.parser.jade&#39;</span><span class="p">,</span> <span class="s1">&#39;jade&#39;</span><span class="p">);</span>
+    <span class="c1">//jade文件经过编译后输出为html文件</span>
+    <span class="nx">fis</span><span class="p">.</span><span class="nx">config</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;roadmap.ext.jade&#39;</span><span class="p">,</span> <span class="s1">&#39;html&#39;</span><span class="p">);</span>
+</pre></div>
+<br />
+3. 然后就很high了，直接上代码<br />
+4. 源码<br />
+    <div class="codehilite"><pre><span class="c1">//js文件</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">directive</span><span class="p">(</span><span class="s1">&#39;demo&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="nx">template</span><span class="o">:</span> <span class="nx">__inline</span><span class="p">(</span><span class="s1">&#39;demo.jade&#39;</span><span class="p">),</span>
+        <span class="nx">scope</span><span class="o">:</span> <span class="p">{},</span>
+        <span class="nx">link</span><span class="o">:</span> <span class="kd">function</span> <span class="nx">postLink</span><span class="p">(</span><span class="nx">scope</span><span class="p">,</span> <span class="nx">iElement</span><span class="p">,</span> <span class="nx">iAttrs</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+<span class="p">})</span>
+</pre></div>
+</p>
+<div class="codehilite"><pre><span class="err">```</span>
+<span class="w">    </span><span class="o">//</span><span class="vg">jade</span><span class="err">模板</span>
+<span class="w">    </span><span class="o">.</span><span class="vg">demo</span>
+<span class="w">        </span><span class="vg">input</span><span class="p">(</span><span class="vg">type</span><span class="o">=</span><span class="c1">&#39;text&#39;)</span>
+<span class="w">    </span><span class="vg">p</span><span class="o">.</span><span class="vg">alert</span>
+<span class="err">```</span>
+</pre></div>
+
+
+<ol>
+<li>编译后<br />
+<code>app.directive('demo', function () {
+    return {
+        template: "&lt;div class=\"demo\"&gt;&lt;input type=\"text\"/&gt;&lt;/div&gt;&lt;p class=\"alert\"&gt;&lt;/p&gt;",
+        scope: {},
+        link: function postLink(scope, iElement, iAttrs) {
+
+        }
+    }
+})</code></li>
+<li>么么哒，不需要html2js这种服务 这样所有模板都不需要异步加载，集成jade，增强效率第一步搞定</li>
 </ol></article></body></html>

@@ -11,9 +11,9 @@
 
 1. 本地安装fis-parser-jade
 
-    ```
-    npm install -g fis-parser-jade
-    ```
+```
+npm install -g fis-parser-jade
+```
 2. 然后再项目的fis-conf.js里加入下面两行
 
  ```js
@@ -24,36 +24,36 @@
  ```
 3. 然后就很high了，直接上代码
 4. 源码
-    - js文件
-     ```js
+    ```js
+    //js文件
     app.directive('demo', function () {
         return {
             template: __inline('demo.jade'),
             scope: {},
             link: function postLink(scope, iElement, iAttrs) {
-
+                console.log(1)
             }
         };
     })
-     ```
+    ```
 
-    - jade模板
 
-     ```
+    ```
+        //jade模板
         .demo
             input(type='text')
         p.alert
-     ```
-5 编译后
- ```
-    app.directive('demo', function () {
-        return {
-            template: "<div class=\"demo\"><input type=\"text\"/></div><p class=\"alert\"></p>",
-            scope: {},
-            link: function postLink(scope, iElement, iAttrs) {
+    ```
+5. 编译后
+```
+app.directive('demo', function () {
+    return {
+        template: "<div class=\"demo\"><input type=\"text\"/></div><p class=\"alert\"></p>",
+        scope: {},
+        link: function postLink(scope, iElement, iAttrs) {
 
-            }
         }
-    })
- ```
-     
+    }
+})
+```
+6. 么么哒，不需要html2js这种服务 这样所有模板都不需要异步加载，集成jade，增强效率第一步搞定
