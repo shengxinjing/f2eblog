@@ -7,8 +7,13 @@
 - 还有一个很好的[练习页面](http://naltatis.github.io/jade-syntax-docs)
 
 - 主要记录一下和fis的集成，fis提供了配合jade的
+- 项目里主要用到了jade编译为html的功能，数据加载模板的功能没用到，使用了jade比较简单的功能
 
 1. 本地安装fis-parser-jade
-     ```
-     npm install -g fis-parser-jade
-     ```
+
+    ```
+    npm install -g fis-parser-jade
+    ```
+2. 然后再项目的fis-conf.js里加入下面两行
+
+     
