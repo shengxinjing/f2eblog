@@ -39,18 +39,27 @@ npm install -g fis-parser-jade
     //jade模板
     .demo
         input(type='text')
-    p.alert
+    p.alert demo
     ```
-5. 编译后
+5. 执行fis编译命令
+```js
+    //发布到本地的output目录
+    fis release -d output
+``` 
+6. 编译后的html和js
+```html
+<div class="demo"><input type="text"/></div><p class="alert">demo</p>
 ```
+
+```js
 app.directive('demo', function () {
     return {
-        template: "<div class=\"demo\"><input type=\"text\"/></div><p class=\"alert\"></p>",
+        template: "<div class=\"demo\"><input type=\"text\"/></div><p class=\"alert\">demo</p>",
         scope: {},
         link: function postLink(scope, iElement, iAttrs) {
-
+            console.log(1)
         }
     }
 })
 ```
-6. 么么哒，不需要html2js这种服务 这样所有模板都不需要异步加载，集成jade，增强效率第一步搞定
+7. 么么哒，不需要html2js这种服务 这样所有模板都不需要异步加载，集成jade，增强效率第一步搞定
