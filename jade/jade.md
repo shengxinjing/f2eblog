@@ -35,14 +35,11 @@ npm install -g fis-parser-jade
             }
         };
     })
-    ```
 
-
-    ```
-        //jade模板
-        .demo
-            input(type='text')
-        p.alert
+    //jade模板
+    .demo
+        input(type='text')
+    p.alert
     ```
 5. 编译后
 ```
